@@ -1,4 +1,10 @@
-language: python
+language:
+- python
 python:
-  - "2.7"
-  - "3.4"
+- 3.7
+script:
+- black --check --diff
+- flake8
+- coverage run
+after_script:
+- coveralls
