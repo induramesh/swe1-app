@@ -3,7 +3,7 @@ language:
 python:
 - 3.7
 script:
-- black
+- black .
 - flake8
 - coverage run
 after_script:
