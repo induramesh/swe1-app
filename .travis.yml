@@ -5,6 +5,5 @@ python:
 script:
 - black .
 - flake8
-- coverage run
 after_script:
 - coveralls
